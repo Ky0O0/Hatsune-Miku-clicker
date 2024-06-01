@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.play-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ff69b4, #ff1493);
+}
+
+.play-screen button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.play-screen button:hover {
+    transform: scale(1.1);
+}
+
+.game-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #f0f0f0;
+}
+
+.coin-count {
+    display: flex;
+    align-items: center;
+}
+
+.leek-icon {
+    height: 24px;
+    margin-right: 5px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.game-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+#game-area img {
+    max-width: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#game-area img:hover {
+    transform: scale(1.1);
+}
+
+.upgrades, .avatars, .backgrounds {
+    width: 200px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.upgrades h2, .avatars h2, .backgrounds h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.upgrades button, .avatars button, .backgrounds button {
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.upgrades button:hover, .avatars button:hover, .backgrounds button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    background: #f0f0f0;
+}
+
+.leeks {
+    display: flex;
+    align-items: center;
+}
+
+.leeks img {
+    height: 24px;
+    margin-right: 5px;
+}

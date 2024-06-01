@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hatsune Miku Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="play-screen" id="play-screen">
+        <button id="play-button">Play</button>
+    </div>
+    <div class="game-screen" id="game-screen" style="display: none;">
+        <header>
+            <div class="coin-count">
+                <img src="images/leek-icon.png" alt="Leek" class="leek-icon">
+                <span id="coins">0</span>
+            </div>
+        </header>
+        <div class="content">
+            <aside class="upgrades">
+                <h2>Upgrades:</h2>
+                <button id="income-0.1" data-cost="393" title="Increases leeks collection by 0.1% per 1 click. (cumulative)">Increase income 0.1% - 393 Leeks</button>
+                <button id="income-0.5" data-cost="3939" title="Increases leeks collection by 0.5% per 1 click. (cumulative)">Increase income 0.5% - 3939 Leeks</button>
+                <button id="income-10" data-cost="393939" title="Increases leeks collection by 10% per 1 click. (cumulative)">Increase income 10% - 393939 Leeks</button>
+                <button id="income-50" data-cost="39393939" title="Increases leeks collection by 50% per 1 click. (cumulative)">Increase income 50% - 39393939 Leeks</button>
+                <button id="income-100" data-cost="3939393939" title="Increases leeks collection by 100% per 1 click. (cumulative)">Increase income 100% - 3939393939 Leeks</button>
+                <button id="add-leek-1" data-cost="3399" title="Adds 1 auto-click that collects 30% of what the player collects after 1 click, the improvement works every 5 seconds">Add Leek +1 - 3399 Leeks</button>
+                <button id="add-leek-39" data-cost="393939" title="Adds 39 auto-click that collects 1170% of what the player collects after 1 click, the improvement works every 5 seconds">Add Leek +39 - 393939 Leeks</button>
+            </aside>
+            <main class="game-area">
+                <img src="images/miku.png" alt="Hatsune Miku" id="miku-img">
+            </main>
+            <aside class="avatars">
+                <h2>Miku Avatars:</h2>
+                <button id="avatar-1" data-cost="39">Wooden Miku - 39 Leeks</button>
+                <button id="avatar-2" data-cost="3939">Bronze Miku - 3939 Leeks</button>
+                <button id="avatar-3" data-cost="339933">Black Miku - 339933 Leeks</button>
+                <button id="avatar-4" data-cost="3939339">Gold Miku - 3939339 Leeks</button>
+                <button id="avatar-5" data-cost="3939393939">Diamond Miku - 3939393939 Leeks</button>
+            </aside>
+            <aside class="backgrounds">
+                <h2>Backgrounds:</h2>
+                <button id="background-1">Pink</button><br>
+                <button id="background-2">Sky Blue</button><br>
+                <button id="background-3">Chartreuse</button>
+                <button id="background-4">Dark Turquoise</button>
+                <button id="background-5">Light Salmon</button>
+            </aside>
+        </div>
+        <footer>
+            <div class="leeks" id="leeks"></div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
